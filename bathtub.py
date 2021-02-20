@@ -17,13 +17,14 @@ class Bathtub():
         self.shape = input()
         self.cleanliness = "clean"
     
-    # Fill bathtub with water
+    # Fill bathtub all the way up with water
     def fill_up(self):
         print(f'\nYour bathtub is filling up. {self.water_capacity} litres of water are being poured in. Wait...', end='\r')
         time.sleep(5)
         print('Congratulations! Your bathtub has been filled up. You can take your bath now. The water is clean.')
         self.status = "filled"
         return "Filled up"
+    
     
     # Empty bathub
     def empty(self):
