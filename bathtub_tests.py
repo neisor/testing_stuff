@@ -22,9 +22,9 @@ def test_check_fill_empty():
 
 def test_check_clogged():
     assert bathtub.clog() == "Clogged"
-    assert bathtub.status == "clogged"
+    assert bathtub.status_clogged == "clogged"
 
 def test_check_unclogged():
     assert bathtub.unclog() == "Unclogged"
-    assert bathtub.status == "unclogged"
+    assert bathtub.status_clogged == "unclogged"
     
