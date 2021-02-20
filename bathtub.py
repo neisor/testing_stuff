@@ -25,6 +25,24 @@ class Bathtub():
         self.status = "filled"
         return "Filled up"
     
+    def fill_up_to_a_certain_level(self, level: int):
+        try:
+            int(level)
+        except ValueError:
+            print('You have to pass an integer for filling up the bathtub to a certain level! Try again...')
+            sys.exit()
+        if level <= 10 and level >= 1:
+            for i in range(1, level):
+                print()
+                print(f'Wait... Filling up the water to level {level}. What is on level {i}')
+                time.sleep(1)
+            print(f'Water has been filled up to your desired level: {level}')
+            self.status = "filled"
+            return "filled to a certain level"
+        else:
+            print('Bathtub has a maximum of 10 levels to be filled up to! Use a number between 1 and 10. Try again...')
+            sys.exit()
+            
     
     # Empty bathub
     def empty(self):
