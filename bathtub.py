@@ -7,14 +7,23 @@ class Bathtub():
         self.status = "empty"
         print("\nWhat should the color of the bathtub be?:")
         self.color = input()
+        if self.color not in ["white", "yellow", "blue", "purple", "black", "red", "green", "mahagon"]:
+            print('You did not use a traditional color of a bathtub! Try again...')
+            sys.exit()
         print("What should the capacity of the bathtub be (in litres)?:")
         try:
             self.water_capacity = int(input())
         except ValueError:
             print('You can only input an integer! Try again...')
             sys.exit()
+        if self.water_capacity < 25:
+            print('Water capacity has to be at least 25 litres! Try again...')
+            sys.exit()
         print("What should the shape of the bathtub be?:")
         self.shape = input()
+        if self.shape not in ["oval", "round", "square"]:
+            print("You did not use a traditional shape of a bathtub! Try again...")
+            sys.exit()
         self.cleanliness = "clean"
     
     # Fill bathtub all the way up with water
