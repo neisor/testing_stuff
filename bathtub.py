@@ -48,3 +48,7 @@ class Bathtub():
     def clean(self):
         self.cleanliness = "clean"
         return "Clean"
+    
+    # Adding bathing salt but do not change the instance's attributes
+    def add_salt(self):
+        return "Bathing salt added"
