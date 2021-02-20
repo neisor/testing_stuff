@@ -23,3 +23,11 @@ class Bathtub():
         print('Bathtub emptied successfully!')
         self.status = "empty"
         return "Emptied"
+    
+    def clog(self):
+        self.status_clogged = "clogged"
+        return "Clogged"
+    
+    def unclog(self):
+        self.status_clogged = "unclogged"
+        return "Unclogged"
