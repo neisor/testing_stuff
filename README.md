@@ -6,6 +6,3 @@ If you are using Windows run the following command: py.test.exe .\bathtub_tests.
 
 Dependencies:
 pip install pytest
-
-Proof of passed tests:
-![Proof][proof_passed_tests.png]
