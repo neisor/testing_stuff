@@ -48,5 +48,6 @@ def test_salt():
 
 # Test for filling up the bathtub to a certain level
 def test_fill_to_certain_level():
+    assert bathtub.status == "empty"
     assert bathtub.fill_up_to_a_certain_level(5) == "filled to a certain level"
     assert bathtub.status == "filled"
