@@ -21,6 +21,7 @@ def test_empty():
 
 def test_check_fill_empty():
     assert bathtub.status == "empty"
+    assert bathtub.cleanliness == "dirty"
 
 def test_check_clogged():
     assert bathtub.clog() == "Clogged"
