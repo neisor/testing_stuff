@@ -41,3 +41,7 @@ def test_check_unclogged():
 def test_clean():
     assert bathtub.clean() == "Clean"
     assert bathtub.cleanliness == "clean"
+    
+# Test for adding bathing salt and checking if it was added correctly
+def test_salt():
+    assert bathtub.add_salt() == "Bathing salt added"
