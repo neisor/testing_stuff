@@ -1,6 +1,6 @@
 from bathtub import Bathtub
 
-bathtub = Bathtub('white', 100, 'oval')
+bathtub = Bathtub()
 
 def test_check_variable_types():
     assert type(bathtub.color) == str
