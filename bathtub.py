@@ -13,6 +13,7 @@ class Bathtub():
             sys.exit()
         print("What should the shape of the bathtub be?:")
         self.shape = input()
+        self.cleanliness = "clean"
         
     
     def fill_up(self):
@@ -27,6 +28,7 @@ class Bathtub():
         time.sleep(5)
         print('Bathtub emptied successfully!')
         self.status = "empty"
+        self.cleanliness = "dirty"
         return "Emptied"
     
     def clog(self):
@@ -36,3 +38,7 @@ class Bathtub():
     def unclog(self):
         self.status_clogged = "unclogged"
         return "Unclogged"
+    
+    def clean(self):
+        self.cleanliness = "clean"
+        return "Clean"
