@@ -1,11 +1,16 @@
 import time
+import sys
 class Bathtub():
     def __init__(self):
         self.status = "empty"
-        print("What should the color of the bathtub be?:")
+        print("\nWhat should the color of the bathtub be?:")
         self.color = input()
-        print("What should the capacity of the bathtub be?:")
+        print("What should the capacity of the bathtub be (in litres)?:")
+        try:
         self.water_capacity = int(input())
+        except ValueError:
+            print('You can only input an integer! Try again...')
+            sys.exit()
         print("What should the shape of the bathtub be?:")
         self.shape = input()
         
