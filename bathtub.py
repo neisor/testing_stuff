@@ -34,7 +34,7 @@ class Bathtub():
         if level <= 10 and level >= 1:
             for i in range(1, level):
                 print()
-                print(f'Wait... Filling up the water to level {level}. What is on level {i}')
+                print(f'Wait... Filling up the water to level {level}. Water is on level {i}')
                 time.sleep(1)
             print(f'Water has been filled up to your desired level: {level}')
             self.status = "filled"
