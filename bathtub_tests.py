@@ -13,3 +13,9 @@ def test_fill_up():
 
 def test_check_fill():
     assert bathtub.status == "filled"
+    
+def test_empty():
+    assert bathtub.empty() == "Emptied"
+
+def test_check_fill_empty():
+    assert bathtub.status == "empty"
