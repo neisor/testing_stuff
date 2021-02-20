@@ -19,7 +19,7 @@ class Bathtub():
     
     # Fill bathtub with water
     def fill_up(self):
-        print(f'Your bathtub is filling up. {self.water_capacity} litres of water are being poured in. Wait...', end='\r')
+        print(f'\nYour bathtub is filling up. {self.water_capacity} litres of water are being poured in. Wait...', end='\r')
         time.sleep(5)
         print('Congratulations! Your bathtub has been filled up. You can take your bath now. The water is clean.')
         self.status = "filled"
@@ -27,7 +27,7 @@ class Bathtub():
     
     # Empty bathub
     def empty(self):
-        print('Emptying your bathtub. Wait...', end='\r')
+        print('\nEmptying your bathtub. Wait...', end='\r')
         time.sleep(5)
         print('Bathtub emptied successfully!')
         self.status = "empty"
