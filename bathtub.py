@@ -14,5 +14,12 @@ class Bathtub():
         print(f'Your bathtub is filling up. {self.water_capacity} liters of water are being poured in...', end='\r')
         time.sleep(5)
         print('Congratulations! Your bathtub has been filled up. You can take your bath now.')
-        self.status == "filled"
+        self.status = "filled"
         return "Filled up"
+    
+    def empty(self):
+        print('Emptying your bathtub...', end='\r')
+        time.sleep(5)
+        print('Bathtub emptied successfully!')
+        self.status = "empty"
+        return "Emptied"
