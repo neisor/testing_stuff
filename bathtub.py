@@ -15,7 +15,6 @@ class Bathtub():
         self.shape = input()
         self.cleanliness = "clean"
         
-    
     def fill_up(self):
         print(f'Your bathtub is filling up. {self.water_capacity} litres of water are being poured in. Wait...', end='\r')
         time.sleep(5)
