@@ -1,6 +1,8 @@
 import time
 import sys
 class Bathtub():
+    
+    # Initiate Bathtub class instance
     def __init__(self):
         self.status = "empty"
         print("\nWhat should the color of the bathtub be?:")
@@ -14,7 +16,8 @@ class Bathtub():
         print("What should the shape of the bathtub be?:")
         self.shape = input()
         self.cleanliness = "clean"
-        
+    
+    # Fill bathtub with water
     def fill_up(self):
         print(f'Your bathtub is filling up. {self.water_capacity} litres of water are being poured in. Wait...', end='\r')
         time.sleep(5)
@@ -22,6 +25,7 @@ class Bathtub():
         self.status = "filled"
         return "Filled up"
     
+    # Empty bathub
     def empty(self):
         print('Emptying your bathtub. Wait...', end='\r')
         time.sleep(5)
@@ -30,14 +34,17 @@ class Bathtub():
         self.cleanliness = "dirty"
         return "Emptied"
     
+    # Clog bathtub
     def clog(self):
         self.status_clogged = "clogged"
         return "Clogged"
     
+    # Unclog bathtub
     def unclog(self):
         self.status_clogged = "unclogged"
         return "Unclogged"
     
+    # Clean bathtub
     def clean(self):
         self.cleanliness = "clean"
         return "Clean"
