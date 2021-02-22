@@ -78,4 +78,6 @@ class Bathtub():
     
     # Adding bathing salt but do not change the instance's attributes
     def add_salt(self):
+        if self.status != "empty":
+            self.status = "filled up and with bathing salt added"
         return "Bathing salt added"
