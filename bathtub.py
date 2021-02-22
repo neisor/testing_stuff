@@ -46,13 +46,12 @@ class Bathtub():
                 print(f'Wait... Filling up the water to level {level}. Water is on level {i}')
                 time.sleep(1)
             print(f'Water has been filled up to your desired level: {level}')
-            self.status = "filled"
+            self.status = f"filled to level {level}"
             return "filled to a certain level"
         else:
             print('Bathtub has a maximum of 10 levels to be filled up to! Use a number between 1 and 10. Try again...')
             sys.exit()
             
-    
     # Empty bathub
     def empty(self):
         print('\nEmptying your bathtub. Wait...', end='\r')
