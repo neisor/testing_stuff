@@ -41,11 +41,11 @@ class Bathtub():
             print('You have to pass an integer for filling up the bathtub to a certain level! Try again...')
             sys.exit()
         if level <= 10 and level >= 1:
+            print()
             for i in range(1, level):
-                print()
-                print(f'Wait... Filling up the water to level {level}. Water is on level {i}')
+                print(f'Wait... Filling up the water to level {level}. Water is on level {i}', end="\r")
                 time.sleep(1)
-            print(f'Water has been filled up to your desired level: {level}')
+            print(f'\nWater has been filled up to your desired level: {level}')
             self.status = f"filled to level {level}"
             return "filled to a certain level"
         else:
