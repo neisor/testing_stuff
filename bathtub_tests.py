@@ -42,13 +42,14 @@ def test_clean():
     assert bathtub.clean() == "Clean"
     assert bathtub.cleanliness == "clean"
     
+# Test for filling up the bathtub to a certain level
+def test_fill_to_certain_level():
+    water_level = 9
+    assert bathtub.status == "empty"
+    assert bathtub.fill_up_to_a_certain_level(water_level) == "filled to a certain level"
+    assert bathtub.status == f"filled to level {water_level}"
+    
 # Test for adding bathing salt and checking if it was added correctly
 def test_salt():
     assert bathtub.add_salt() == "Bathing salt added"
     assert bathtub.status == "filled up and with bathing salt added"
-
-# Test for filling up the bathtub to a certain level
-def test_fill_to_certain_level():
-    assert bathtub.status == "empty"
-    assert bathtub.fill_up_to_a_certain_level(5) == "filled to a certain level"
-    assert bathtub.status == "filled"
