@@ -45,6 +45,7 @@ def test_clean():
 # Test for adding bathing salt and checking if it was added correctly
 def test_salt():
     assert bathtub.add_salt() == "Bathing salt added"
+    assert bathtub.status == "filled up and with bathing salt added"
 
 # Test for filling up the bathtub to a certain level
 def test_fill_to_certain_level():
